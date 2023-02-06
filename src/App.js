@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import NewExpense from './NewExpense/NewExpense';
 import ExpenseItem from './ExpenseItem';
 
 function App() {
@@ -14,6 +15,9 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+        <h2>
+          <NewExpense />
+        </h2>
         <p>
         <ExpenseItem title={expenses[0].title} amount={expenses[0].amount} date={expenses[0].date}></ExpenseItem>
         <ExpenseItem title={expenses[1].title} amount={expenses[1].amount} date={expenses[1].date}></ExpenseItem>
